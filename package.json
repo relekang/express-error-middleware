@@ -1,0 +1,43 @@
+{
+  "name": "express-error-middleware",
+  "version": "1.0.0",
+  "description": "Simple error handling middleware for express.js",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "bluebird": "^2.9.13",
+    "chai": "^2.1.1",
+    "express": "^4.12.2",
+    "istanbul": "^0.3.7",
+    "jade": "^1.9.2",
+    "mocha": "^2.2.1",
+    "request": "^2.53.0",
+    "supertest": "^0.15.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha",
+    "coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha",
+    "cobertura": "node_modules/.bin/istanbul report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/relekang/express-error-middleware.git"
+  },
+  "keywords": [
+    "express",
+    "express.js",
+    "error",
+    "middleware"
+  ],
+  "author": "Rolf Erik Lekang <me@rolflekang.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/relekang/express-error-middleware/issues"
+  },
+  "homepage": "https://github.com/relekang/express-error-middleware"
+}
