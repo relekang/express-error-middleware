@@ -25,6 +25,7 @@ apiRouter.use(errorHandler.ApiErrorsMiddleware);
 
 app.use('/api', apiRouter);
 
+app.use(errorHandler.CsrfErrorMiddleware);
 app.use(errorHandler.NotFoundMiddleware);
 app.use(errorHandler.ErrorsMiddleware);
 
