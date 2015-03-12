@@ -23,8 +23,6 @@ var app = express()
 
 app.use(errorHandler.NotFoundMiddleware); // if a request is not handled before this a NotFoundError will be sent into next
 app.use(errorHandler.ErrorsMiddleware); // this will render an error page based on the error it gets.
-
-moudule.exports = app;
 ```
 
 ### NotFoundMiddleware
