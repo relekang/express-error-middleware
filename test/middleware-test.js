@@ -22,8 +22,8 @@ describe('express-error-middleware', function() {
         .expect(500)
         .endAsync()
         .then(function(res) {
-          expect(res.body.error).to.equal('Error');
-          expect(res.body.message).to.equal('an error you say?');
+          expect(res.body.error).to.equal('TestError');
+          expect(res.body.message).to.equal('Test Message');
         });
     });
   });

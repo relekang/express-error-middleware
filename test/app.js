@@ -1,6 +1,7 @@
 var path = require('path');
 var express = require('express');
 var errorHandler = require('../lib');
+var errors = require('./errors');
 
 var app = express();
 app.set('view engine', 'jade');
@@ -18,7 +19,7 @@ app.get('/401', function(req, res) {
 
 var apiRouter = express.Router();
 apiRouter.get('/', function() {
-  throw new Error('an error you say?');
+  throw new errors.TestError();
 });
 
 apiRouter.use(errorHandler.ApiErrorsMiddleware);
