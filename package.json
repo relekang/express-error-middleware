@@ -1,6 +1,6 @@
 {
   "name": "express-error-middleware",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Simple error handling middleware for express.js",
   "main": "lib/index.js",
   "directories": {
