@@ -10,7 +10,7 @@
     "util": "^0.10.3"
   },
   "devDependencies": {
-    "bluebird": "^2.9.13",
+    "bluebird": "^3.0.4",
     "chai": "^3.3.0",
     "express": "^4.13.3",
     "istanbul": "^0.4.0",
